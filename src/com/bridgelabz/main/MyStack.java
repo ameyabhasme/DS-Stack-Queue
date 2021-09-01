@@ -10,4 +10,8 @@ public class MyStack<T> {
 	public INode<Integer> peek() {
 		return myLinkedList.head;
 	}
+
+	public INode<Integer> pop() {
+		return myLinkedList.popFirst();
+	}
 }
