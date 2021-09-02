@@ -10,4 +10,8 @@ public class MyQueue<T> {
 	public INode<Integer> peek() {
 		return myLinkedList.head;
 	}
+
+	public INode<Integer> dequeue() {
+		return myLinkedList.popFirst();
+	}
 }

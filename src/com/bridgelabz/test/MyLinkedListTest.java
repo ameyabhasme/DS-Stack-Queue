@@ -49,4 +49,16 @@ public class MyLinkedListTest {
         INode<Integer> peek = queue.peek();
         Assert.assertEquals(peek, myFirstNode);
     }
+    
+    @Test
+    public void IfQueueIsDequeued_ReturnTrue() {
+        myFirstNode = new MyNode<>(56);
+        mySecondNode = new MyNode<>(30);
+        myThirdNode = new MyNode<>(70);
+        queue.enqueue(myFirstNode);
+        queue.enqueue(mySecondNode);
+        queue.enqueue(myThirdNode);
+        INode<Integer> dequeueQueue = queue.dequeue();
+        Assert.assertEquals(dequeueQueue, myFirstNode);
+    }
 }
